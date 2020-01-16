@@ -6,7 +6,7 @@ class LauncherScreen extends StatefulWidget {
   @override
   _LauncherScreenState createState() => new _LauncherScreenState();
 }
-
+//program açılırken giriş ekranı yaratmak için flutter'ın splash screen kütüphanesini kullandık
 class _LauncherScreenState extends State<LauncherScreen> {
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,8 @@ class _LauncherScreenState extends State<LauncherScreen> {
           style: new TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20.0
-          ),),
+          ),
+        ),
         image: new Image.asset('images/location.png'),
         backgroundColor: Colors.white,
         styleTextUnderTheLoader: new TextStyle(),

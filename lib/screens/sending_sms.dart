@@ -1,6 +1,5 @@
 import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sending_location/components/ItemsTile.dart';
 import 'package:sending_location/components/TextCard.dart';
 import 'package:flutter_sms/flutter_sms.dart';

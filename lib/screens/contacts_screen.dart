@@ -22,7 +22,7 @@ class _contacts_screenState extends State<contacts_screen> {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.CENTER,
         timeInSecForIos: 1,
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.greenAccent,
         textColor: Colors.black,
         fontSize: 16.0
     );
@@ -93,7 +93,7 @@ class _contacts_screenState extends State<contacts_screen> {
                 }
                 else{
                   Fluttertoast.showToast(
-                      msg: "Could not get location information",
+                      msg: "Could not get location information.",
                       toastLength: Toast.LENGTH_SHORT,
                       gravity: ToastGravity.CENTER,
                       timeInSecForIos: 1,
