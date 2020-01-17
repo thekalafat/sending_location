@@ -11,14 +11,14 @@ class contacts_screen extends StatefulWidget {
 
 class _contacts_screenState extends State<contacts_screen> {
 
-  Iterable<Contact> _contacts;
+  Iterable<Contact> _contacts; //rehbere sıralı olarak erişeceğimiz için iterable
 
   double _latitude;
   double _longitude;
 
   void getLocation() async {
     Fluttertoast.showToast(
-        msg: "Location successfully imported.",
+          msg: "Location successfully imported.",
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.CENTER,
         timeInSecForIos: 1,
@@ -51,6 +51,7 @@ class _contacts_screenState extends State<contacts_screen> {
 
       var contacts = await ContactsService.getContacts();
 
+      //nesnenin durumunun değiştiğini bildirmek için
       setState(() {
         _contacts = contacts;
       });
@@ -113,7 +114,7 @@ class _contacts_screenState extends State<contacts_screen> {
             );
           },
         )
-            //KİŞİLERE ERİŞİM İZNİ VERİLMEZSE EKRANIN ORTASINDA YUVARLAK DÖNECEK
+            //UYGULAMA İZİNLERİNDEN KİŞİLERE ERİŞİM İZNİ VERİLMEZSE EKRANIN ORTASINDA YUVARLAK DÖNECEK
             : Center(child: CircularProgressIndicator(),),
       ),
     );

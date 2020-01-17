@@ -48,9 +48,9 @@ class sending_sms extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
 
-            ItemsTile(Icons.phone, Colors.red, phones),
+            ItemsTile(Icons.phone, Colors.red, phones), //telefon kartını oluşturan fonksiyon
 
-            TextCard(Icons.location_on,Colors.red,""+latitude.toString()+" , "+longitude.toString()),
+            TextCard(Icons.location_on,Colors.red,""+latitude.toString()+" , "+longitude.toString()), //enlem,boylam gösteren fonksiyon
 
 
           ],
